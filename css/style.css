@@ -93,17 +93,17 @@
 }
 
 .main-section-text {
-  font-family: Raleway;
-  width: 70%;
+  width: 80%;
   color: #fff;
 }
 
 .main-section-img {
   margin-right: 100px;
-  width: 30%;
+  width: 20%;
 }
 
 .main-section-text-title {
+  font-family: Raleway;
   font-size: 24px;
   margin-bottom: 35px;
 }
