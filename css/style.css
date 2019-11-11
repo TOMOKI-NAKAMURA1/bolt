@@ -20,7 +20,6 @@
 
 .header {
   position: fixed;
-  height: 80px;
   background-color: #fff;
   width: 100%;
   top: 0;
@@ -118,13 +117,14 @@
   justify-content: space-around;
   background-color: #f2f2f2;
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .article-text-title {
   font-family: Raleway;
   color: #333;
   text-align: center;
-  margin-top: 60px;
   font-size: 24px;
 }
 
@@ -156,7 +156,6 @@
   display: flex;
   justify-content: center;
   margin-top: 90px;
-  margin-bottom: 70px;
   align-items: center;
 }
 
