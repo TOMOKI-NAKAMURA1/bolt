@@ -70,6 +70,7 @@
 }
 
 .main-title {
+  font-family: Raleway;
   background-color: #f2f2f2;
   text-align: center;
   width: 100%;
@@ -156,7 +157,7 @@
   margin-left: 0;
 }
 
-.img_margin a:nth-of-type(n + 4) {
+.img_margin a:nth-child(n + 4) {
   margin-top: 80px;
 }
 
@@ -266,18 +267,15 @@
   color: #fff;
 }
 
-/*レスポンシブ対応PC*/
+/*レスポンシブ対応TAB*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .inner {
     width: 97%;
   }
 
   /*what we can do?*/
-
   .main-section {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+    display: block;
     padding-bottom: 30px;
   }
   .main-section-img {
@@ -286,39 +284,29 @@
   }
   .main-section-text {
     width: 100%;
-    color: #fff;
     display: inline-block;
-    width: 82%;
   }
   .main-section-text-title {
-    font-family: Raleway;
-    font-size: 24px;
     margin-top: 20px;
-    margin-bottom: 35px;
-  }
-  .main-section-text p {
-    font-size: 20px;
   }
 
   .img_margin a {
-    width: 100%;
-    display: inline-block;
-    margin: 0 0 0 0;
-    opacity: 0.7;
-    transition: all 0.3s;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
   }
-  .img_margin a:hover {
-    opacity: 1;
+
+  .img_margin a:nth-child(n + 4) {
+    margin-top: 0;
   }
   .img_margin a:nth-child(3n + 1) {
-    margin-left: 0;
+    margin-top: 80px;
+    margin-left: auto;
   }
-  .img_margin a:nth-of-type(n + 4) {
+  .img_margin a:first-child {
     margin-top: 0px;
   }
-  .img_margin a:nth-of-type(4) {
-    margin-top: 80px;
-  }
+
   .article-foot {
     display: block;
     text-align: center;
@@ -327,7 +315,6 @@
   .article-foot-text {
     display: inline-block;
     text-align: center;
-    color: #333;
     width: 100%;
     margin-right: 0;
     margin-bottom: 60px;
@@ -335,10 +322,6 @@
   .article-foot-btn {
     display: inline-block;
     width: 20%;
-    padding: 14px 20px;
-    color: #fff;
-    background-color: #74cfae;
-    text-decoration: none;
   }
   .sub-main-contents-section {
     padding-bottom: 50px;
@@ -350,11 +333,19 @@
     margin-left: 0;
   }
   .section_sub_picture p {
-    margin-top: 20px;
     margin-bottom: 88px;
   }
   .section_sub_picture :first-child {
-    margin-left: none;
+    margin-left: 0;
+  }
+  /*sns*/
+  .sns_contents {
+    display: block;
+    padding: 50px 0;
+    box-sizing: border-box;
+  }
+  .sns-icon {
+    width: 20%;
   }
 }
 
@@ -381,12 +372,11 @@
   .title-text h1 {
     font-size: 80px;
     margin-bottom: 20px;
-    color: #74cfae;
   }
 
   /*WHAT WE CAN DO?*/
   .main-section {
-    display: inline-block;
+    display: block;
     padding-bottom: 30px;
   }
   .main-section-img {
@@ -394,45 +384,36 @@
     width: 100%;
   }
   .main-section-text {
-    width: 82%;
+    width: 100%;
     display: inline-block;
   }
   .main-section-text-title {
-    font-family: Raleway;
-    font-size: 24px;
     margin-top: 20px;
-    margin-bottom: 35px;
-  }
-  .main-section-text p {
-    font-size: 20px;
   }
 
   /*OUR LATEST WORK*/
   .img_margin a {
-    width: 100%;
-    display: inline-block;
-    margin: 0 0 0 0;
-    opacity: 0.7;
-    transition: all 0.3s;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
   }
-  .img_margin a:hover {
-    opacity: 1;
+  .img_margin a:nth-child(n + 4) {
+    margin-top: 0;
   }
   .img_margin a:nth-child(3n + 1) {
-    margin-left: 0;
+    margin-top: 80px;
+    margin-left: auto;
   }
-  .img_margin a:nth-of-type(n + 4) {
+  .img_margin a:first-child {
     margin-top: 0px;
   }
-  .img_margin a:nth-of-type(4) {
-    margin-top: 80px;
-  }
+
   .article-foot {
     display: block;
   }
   .article-foot-text {
     display: inline-block;
-    width: 77%;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 60px;
   }
@@ -443,7 +424,6 @@
 
   /*OUR SKILLS*/
   .sub-main-contents-section {
-    width: 100%;
     padding-bottom: 50px;
   }
   .section_sub_picture {
@@ -451,9 +431,6 @@
   }
   .section_sub_picture div {
     margin-left: 0;
-  }
-  .section_sub_picture p {
-    margin-top: 20px;
     margin-bottom: 70px;
   }
   .section_sub_picture :first-child {
@@ -467,7 +444,6 @@
     box-sizing: border-box;
   }
   .sns-icon {
-    font-size: 3em;
     width: 100%;
   }
 }
