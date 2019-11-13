@@ -16,18 +16,19 @@
   font-family: Lato;
 }
 
+.font-raleway {
+  font-family: Raleway;
+}
+
 /*header*/
 
 .header {
   position: fixed;
+  padding: 15px 0;
   background-color: #fff;
   width: 100%;
   top: 0;
   z-index: 1;
-}
-
-.header-inner {
-  padding: 15px 0;
 }
 
 .header-icon {
@@ -70,7 +71,6 @@
 }
 
 .main-title {
-  font-family: Raleway;
   background-color: #f2f2f2;
   text-align: center;
   width: 100%;
@@ -112,7 +112,6 @@
 }
 
 .main-section-text-title {
-  font-family: Raleway;
   font-size: 24px;
   margin-bottom: 35px;
 }
@@ -129,7 +128,6 @@
 }
 
 .article-text-title {
-  font-family: Raleway;
   color: #333;
   text-align: center;
   font-size: 24px;
@@ -173,17 +171,12 @@
 }
 
 .article-foot-btn {
-  width: 75px;
   font-size: 12px;
   padding: 14px 20px;
   color: #fff;
   background-color: #74cfae;
   text-decoration: none;
-  transition: all 0, 3s;
-}
-
-.article-foot-btn:hover {
-  color: #333;
+  transition: all 0.3s;
 }
 
 .article-foot-btn:hover {
@@ -201,7 +194,6 @@
 }
 
 .section_sub_text {
-  font-family: Raleway;
   font-size: 24px;
   margin-bottom: 60px;
 }
@@ -234,6 +226,7 @@
 }
 
 .sns_contents {
+  font-size: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,8 +236,8 @@
 }
 
 .sns-icon {
-  font-size: 3em;
-  width: 185px;
+  font-size: 40px;
+  width: 25%;
   padding: 30px 0;
   transition: all 0.3s;
   color: #74cfae;
@@ -259,27 +252,25 @@
 
 .footer {
   background-color: #74cfae;
+  padding-top: 20px;
+  padding-bottom: 25px;
   width: 100%;
 }
 
 .footer-text {
   text-align: right;
-  padding-top: 20px;
-  padding-bottom: 25px;
   color: #fff;
 }
 
 /*レスポンシブ対応TAB*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .inner {
     width: 97%;
   }
-
   /*what we can do?*/
   .main-contents-section {
     padding-bottom: 30px;
   }
-
   .main-section {
     display: block;
   }
@@ -291,13 +282,11 @@
     width: 100%;
     margin-top: 20px;
   }
-
   .img_margin a {
     width: 300px;
     display: block;
     margin: 0 auto;
   }
-
   .img_margin a:nth-child(n + 4) {
     margin-top: 0;
   }
@@ -308,7 +297,6 @@
   .img_margin a:first-child {
     margin-top: 0px;
   }
-
   .article-foot {
     display: block;
     text-align: center;
@@ -322,7 +310,6 @@
   .article-foot-btn {
     display: inline-block;
   }
-
   /*OUR SKILLS*/
   .sub-main-contents-section {
     padding-bottom: 50px;
@@ -334,13 +321,11 @@
     margin-bottom: 88px;
     margin-left: 0;
   }
-
   /*sns*/
   .sns_contents {
     display: block;
     box-sizing: border-box;
   }
-
   .sns-icon {
     display: inline-block;
     width: 25%;
@@ -350,10 +335,6 @@
 /*レスポンシブ対応SP*/
 
 @media screen and (max-width: 767px) {
-  .inner {
-    width: 97%;
-  }
-
   /*header*/
   .header-button {
     display: none;
@@ -361,7 +342,6 @@
   .header-sp {
     display: inline-block;
   }
-
   /*bolt Theme*/
   .main-title {
     padding-top: 160px;
@@ -371,73 +351,22 @@
     font-size: 80px;
     margin-bottom: 20px;
   }
-
-  /*WHAT WE CAN DO?*/
-  .main-contents-section {
-    padding-bottom: 30px;
-  }
-  .main-section {
-    display: block;
-  }
-  .main-section-img {
-    margin-right: 0;
-    width: 100%;
-  }
-  .main-section-text {
-    width: 100%;
-    margin-top: 20px;
-  }
-  /*OUR LATEST WORK*/
-  .img_margin a {
-    width: 300px;
-    display: block;
-    margin: 0 auto;
-  }
-  .img_margin a:nth-child(n + 4) {
-    margin-top: 0;
-  }
-  .img_margin a:nth-child(3n + 1) {
-    margin-top: 80px;
-    margin-left: auto;
-  }
-  .img_margin a:first-child {
-    margin-top: 0px;
-  }
-
   .article-foot {
     display: block;
   }
   .article-foot-text {
     display: inline-block;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 60px;
   }
-  .article-foot-btn {
-    display: inline-block;
-    width: 28%;
-  }
-
   /*OUR SKILLS*/
-  .sub-main-contents-section {
-    padding-bottom: 50px;
-  }
-  .section_sub_picture {
-    display: block;
-  }
   .section_sub_picture div {
-    margin-left: 0;
     margin-bottom: 70px;
   }
   .section_sub_picture :first-child {
     margin-left: none;
   }
-
   /*sns*/
   .sns_contents {
-    display: block;
     padding: 50px 0;
-    box-sizing: border-box;
   }
   .sns-icon {
     width: 100%;
